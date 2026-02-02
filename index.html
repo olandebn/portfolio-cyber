@@ -4,157 +4,187 @@
   <meta charset="UTF-8">
   <title>Syeyyy – Portfolio Cybersécurité</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       margin: 0;
       font-family: "Inter", Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.6;
+      background: #0a0a0f;
+      color: #e0e0ff;
+      display: flex;
     }
 
-    header {
-      padding: 80px 20px;
-      text-align: center;
+    /* MENU LATERAL */
+    nav {
+      width: 220px;
+      height: 100vh;
+      background: #0f0f17;
+      border-right: 1px solid #1f1f2e;
+      padding: 40px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    nav h2 {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      color: #7aa2ff;
+      text-shadow: 0 0 10px #3d5cff;
+    }
+
+    nav a {
+      display: block;
+      margin: 15px 0;
+      color: #b8b8d9;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #7aa2ff;
+      text-shadow: 0 0 8px #3d5cff;
+    }
+
+    /* CONTENU PRINCIPAL */
+    .content {
+      margin-left: 260px;
+      padding: 60px 40px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 10px;
-      font-weight: 700;
+      color: #7aa2ff;
+      text-shadow: 0 0 15px #3d5cff;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-top: 60px;
-      margin-bottom: 20px;
-      font-weight: 600;
+      color: #9bb3ff;
+      text-shadow: 0 0 10px #3d5cff55;
     }
 
     p {
-      max-width: 700px;
-      margin: 0 auto 20px auto;
+      max-width: 800px;
       font-size: 1.1rem;
-      color: #333;
+      color: #c7c7e6;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+    .tag {
+      display: inline-block;
+      background: #1a1a2b;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #9bb3ff;
+      border: 1px solid #2a2a3d;
     }
 
     .project {
-      border: 1px solid #ddd;
+      background: #11111a;
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 10px;
+      border: 1px solid #1f1f2e;
       margin-bottom: 20px;
       transition: 0.2s;
     }
 
     .project:hover {
-      background: #f7f7f7;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eee;
-      padding: 4px 10px;
-      margin: 4px;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      margin-top: 60px;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #0077ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      background: #161622;
+      border-color: #3d5cff55;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Syeyyy</h1>
-  <p>Étudiant en B1 Cybersécurité – Ynov Campus Lille</p>
-</header>
+  <!-- MENU GAUCHE -->
+  <nav>
+    <h2>SYEYYY</h2>
+    <a href="#profil">Profil</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<div class="container">
+  <!-- CONTENU -->
+  <div class="content">
 
-  <section id="about">
-    <h2>À propos</h2>
-    <p>
-      Je suis étudiant en B1 Cybersécurité à Ynov Campus Lille. 
-      Je m’intéresse à l’administration système, la sécurité réseau et la virtualisation.
-      J’apprends chaque semaine de nouvelles compétences que j’applique dans des projets concrets.
-    </p>
-  </section>
+    <section id="profil">
+      <h1>Syeyyy</h1>
+      <p>Étudiant B1 Cybersécurité – Ynov Campus Lille</p>
+    </section>
 
-  <section id="skills">
-    <h2>Compétences</h2>
-    <p>
-      <span class="tag">Windows / Linux</span>
-      <span class="tag">Gestion utilisateurs & groupes</span>
-      <span class="tag">Permissions NTFS</span>
-      <span class="tag">VirtualBox / VMware</span>
-      <span class="tag">Réseau (IP, NAT, DHCP)</span>
-      <span class="tag">Wireshark</span>
-      <span class="tag">Git / GitHub</span>
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projets</h2>
-
-    <div class="project">
-      <h3>Configuration d’un environnement Windows sécurisé</h3>
+    <section id="about">
+      <h2>Profil</h2>
       <p>
-        Mise en place d’une VM Windows : création d’utilisateurs, gestion des groupes,
-        configuration des permissions NTFS, organisation des dossiers et configuration réseau.
+        Je suis étudiant en B1 Cybersécurité à Ynov Campus Lille. 
+        Passionné par l’administration système, la sécurité réseau et la virtualisation,
+        je développe mes compétences à travers des projets concrets et des environnements techniques.
       </p>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Configuration réseau et IP statique</h3>
+    <section id="skills">
+      <h2>Compétences</h2>
       <p>
-        Mise en place d’un réseau NAT, attribution d’une IP statique, test de connectivité
-        et vérification des services réseau.
+        <span class="tag">Windows / Linux</span>
+        <span class="tag">Gestion utilisateurs & groupes</span>
+        <span class="tag">Permissions NTFS</span>
+        <span class="tag">VirtualBox / VMware</span>
+        <span class="tag">Réseau (IP, NAT, DHCP)</span>
+        <span class="tag">Wireshark</span>
+        <span class="tag">Git / GitHub</span>
       </p>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Service Windows Update</h3>
-      <p>
-        Analyse et modification du service Windows Update : changement du type de démarrage,
-        arrêt du service et vérification de l’impact sur le système.
-      </p>
-    </div>
+    <section id="projects">
+      <h2>Projets</h2>
 
-  </section>
+      <div class="project">
+        <h3>Configuration d’un environnement Windows sécurisé</h3>
+        <p>
+          Mise en place d’une VM Windows : utilisateurs, groupes, permissions NTFS,
+          organisation des dossiers et configuration réseau.
+        </p>
+      </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></p>
-    <p>GitHub : <a href="https://github.com/olandebn" target="_blank">github.com/olandebn</a></p>
-  </section>
+      <div class="project">
+        <h3>Configuration réseau et IP statique</h3>
+        <p>
+          Mise en place d’un réseau NAT, attribution d’une IP statique,
+          tests de connectivité et vérification des services réseau.
+        </p>
+      </div>
 
-</div>
+      <div class="project">
+        <h3>Service Windows Update</h3>
+        <p>
+          Analyse et modification du service Windows Update : type de démarrage,
+          arrêt du service et impact sur le système.
+        </p>
+      </div>
 
-<footer>
-  © 2026 – Portfolio de Syeyyy
-</footer>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <p>B1 Cybersécurité – Ynov Campus Lille</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : ton.email@exemple.com</p>
+      <p>GitHub : github.com/olandebn</p>
+    </section>
+
+  </div>
 
 </body>
 </html>
