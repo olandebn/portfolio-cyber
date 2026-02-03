@@ -8,75 +8,95 @@
 </head>
 
 <body>
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <nav class="navbar">
+      <h1 class="navbar-brand">PROFIL</h1>
+      <ul class="nav-menu">
+        <li><a href="#profil" class="nav-link">PROFIL</a></li>
+        <li><a href="#skills" class="nav-link">COMPÉTENCES</a></li>
+        <li><a href="#projects" class="nav-link">PROJETS</a></li>
+        <li><a href="#parcours" class="nav-link">PARCOURS</a></li>
+        <li><a href="#interests" class="nav-link">INTÉRÊTS</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  <!-- MENU GAUCHE -->
-  <nav>
-    <h2>OLAN DEBRUYNE</h2>
-    <a href="#profil">Profil</a>
-    <a href="#skills">Compétences</a>
-    <a href="#projects">Projets</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- CONTENU -->
-  <div class="content">
-
-    <section id="profil">
-      <h1>Olan Debruyne</h1>
-      <p>Étudiant en B1 Cybersécurité – Ynov Campus Lille</p>
-    </section>
-
-    <section id="about">
-      <h2>Profil</h2>
-      <p>
-        Je m’appelle Olan Debruyne et je suis étudiant en B1 Cybersécurité à Ynov Campus Lille.
-        Je développe actuellement des compétences solides en administration système, réseaux et virtualisation,
-        avec un intérêt particulier pour la sécurisation des environnements Windows et Linux.
-        Mon objectif est d’évoluer vers un rôle opérationnel dans le domaine de la cybersécurité.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Compétences</h2>
-      <p>
-        <span class="tag">Windows / Linux</span>
-        <span class="tag">Gestion utilisateurs & groupes</span>
-        <span class="tag">Permissions NTFS</span>
-        <span class="tag">VirtualBox / VMware</span>
-        <span class="tag">Réseau (IP, NAT, DHCP)</span>
-        <span class="tag">Wireshark</span>
-        <span class="tag">Git / GitHub</span>
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projets</h2>
-
-      <div class="project">
-        <h3>Puissance 4 (Go)</h3>
-        <p>Projet en cours de rédaction…</p>
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- ABOUT SECTION -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="profile.jpg" alt="Olan Debruyne" class="profile-img">
+        </div>
+        
+        <div class="hero-text">
+          <h2 class="section-title">À PROPOS</h2>
+          
+          <div class="badges">
+            <span class="badge badge-primary">OPEN TO WORK</span>
+            <span class="badge">LILLE, FR</span>
+            <span class="badge">19 ANS</span>
+            <span class="badge">PERMIS B</span>
+          </div>
+          
+          <p class="section-description">
+            Je m'appelle Léo Dupouy, j'ai 19 ans et je suis étudiant en première année de <strong>Bachelor Cybersécurité à Lille Ynov Campus</strong>. Passionné par l'informatique depuis toujours, j'ai construit mon parcours autour de cette vocation.
+          </p>
+          
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">LINKEDIN</a>
+            <a href="#" class="btn btn-secondary">CONTACT</a>
+          </div>
+        </div>
       </div>
-
-      <div class="project">
-        <h3>Projet RED (Go)</h3>
-        <p>Projet en cours de rédaction…</p>
-      </div>
-
     </section>
 
-    <section id="parcours">
-      <h2>Parcours</h2>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="content-section">
+      <h2 class="section-title">COMPÉTENCES</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Windows / Linux</span>
+        <span class="skill-tag">Gestion utilisateurs & groupes</span>
+        <span class="skill-tag">Permissions NTFS</span>
+        <span class="skill-tag">VirtualBox / VMware</span>
+        <span class="skill-tag">Réseau (IP, NAT, DHCP)</span>
+        <span class="skill-tag">Wireshark</span>
+        <span class="skill-tag">Git / GitHub</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="content-section">
+      <h2 class="section-title">PROJETS</h2>
+      <div class="projects-list">
+        <article class="project-card">
+          <h3 class="project-title">Puissance 4 (Go)</h3>
+          <p class="project-description">Projet en cours de rédaction…</p>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Projet RED (Go)</h3>
+          <p class="project-description">Projet en cours de rédaction…</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARCOURS SECTION -->
+    <section id="parcours" class="content-section">
+      <h2 class="section-title">PARCOURS</h2>
       <p>B1 Cybersécurité – Ynov Campus Lille</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email : ton.email@exemple.com</p>
-      <p>GitHub : github.com/olandebn</p>
+    <!-- INTERESTS SECTION -->
+    <section id="interests" class="content-section">
+      <h2 class="section-title">INTÉRÊTS</h2>
+      <p>Cybersécurité, Administration Système, Réseaux</p>
     </section>
 
-  </div>
+  </main>
 
 </body>
 </html>
