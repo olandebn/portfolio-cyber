@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  background: #c0c0d3;
+  background: black;
   color: #e8d9ff;
   display: flex;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ h1, h2, h3 {
 nav {
   width: 240px;
   height: 100vh;
-  background: #c0c0d3;
+  background: black;
   border-right: 1px solid #2a1f38;
   padding: 40px 25px;
   position: fixed;
@@ -72,7 +72,7 @@ h2 {
   font-size: 2.2rem;
   margin-top: 60px;
   margin-bottom: 15px;
-  color: #e8c2ff;
+  color: black;
   text-shadow: 0 0 12px #b300ff55;
 }
 
@@ -86,7 +86,7 @@ p {
 /* TAGS */
 .tag {
   display: inline-block;
-  background: #c0c0d3;
+  background: black;
   padding: 8px 14px;
   margin: 5px;
   border-radius: 6px;
@@ -108,7 +108,7 @@ p {
 }
 
 .project:hover {
-  background: #c0c0d3;
+  background: black;
   border-color: #b300ff55;
   transform: translateY(-3px);
   box-shadow: 0 0 18px #bb31f755;
