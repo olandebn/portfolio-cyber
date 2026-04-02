@@ -2,299 +2,428 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Olan Debruyne – Cybersécurité & Administration Système</title>
+  <title>Olan Debruyne | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <nav class="navbar">
-      <div class="navbar-header">
-        <h1 class="navbar-brand">OD</h1>
-        <p class="navbar-subtitle">Portfolio</p>
-      </div>
-      
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
-        <li><a href="#skills" class="nav-link" data-section="skills">Compétences</a></li>
-        <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
-        <li><a href="#experience" class="nav-link" data-section="experience">Parcours</a></li>
-        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
-      </ul>
 
-      <div class="navbar-footer">
-        <div class="social-links">
-          <a href="#" class="social-icon" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="#" class="social-icon" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </a>
-          <a href="#" class="social-icon" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-        </div>
-        <p class="sidebar-credit">© 2026 Olan Debruyne</p>
-      </div>
+  <!-- ═══ SIDEBAR NAV ═══ -->
+  <aside class="sidebar">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#profil"      class="nav-link active" data-s="profil">PROFIL</a></li>
+        <li><a href="#competences" class="nav-link" data-s="competences">COMPÉTENCES</a></li>
+        <li><a href="#projets"     class="nav-link" data-s="projets">PROJETS</a></li>
+        <li><a href="#parcours"    class="nav-link" data-s="parcours">PARCOURS</a></li>
+        <li><a href="#contact"     class="nav-link" data-s="contact">CONTACT</a></li>
+      </ul>
     </nav>
   </aside>
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-    
-    <!-- HOME / HERO SECTION -->
-    <section id="home" class="section hero-section">
-      <div class="container-fluid">
-        <div class="hero-grid">
-          <div class="hero-left">
-            <div class="profile-card">
-              <picture>
-                <source srcset="profile.webp" type="image/webp">
-                <img src="profile.jpg" alt="Olan Debruyne" class="profile-image">
-              </picture>
-              <div class="profile-badge">
-                <span class="badge-dot"></span>
-                <span>Disponible</span>
-              </div>
+  <!-- ═══ MAIN ═══ -->
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-name">OLAN<br>DEBRUYNE</h1>
+        <p class="hero-sub">
+          <span id="typing"></span><span class="cursor">|</span>
+        </p>
+      </div>
+      <div class="hero-scroll-hint">SCROLL ↓</div>
+    </section>
+
+    <!-- ── PROFIL ── -->
+    <section id="profil" class="section">
+      <div class="wrap">
+        <div class="card profile-card">
+
+          <div class="profile-photo">
+            <img src="profile.jpg.jpg" alt="Olan Debruyne">
+          </div>
+
+          <div class="profile-info">
+            <h2 class="card-title">À PROPOS <span class="title-dot">.</span></h2>
+
+            <div class="badges">
+              <span class="badge badge-blue">OPEN TO WORK</span>
+              <span class="badge">LILLE, FR</span>
+              <span class="badge">19 ANS</span>
+              <span class="badge">PERMIS B</span>
+            </div>
+
+            <p class="profile-text">
+              Je m'appelle Olan Debruyne, j'ai 19 ans et je suis étudiant en
+              <strong>Bachelor Cybersécurité à Ynov Campus Lille</strong>.
+              Passionné par la sécurité informatique et l'administration système,
+              je me spécialise dans la gestion d'environnements Windows/Linux,
+              la virtualisation et l'administration de réseaux.
+            </p>
+
+            <div class="profile-links">
+              <a href="https://www.linkedin.com/in/olan-debruyne/" target="_blank" class="btn-outline">LINKEDIN</a>
+              <a href="mailto:olan.debruyne@ynov.com" class="btn-outline">olan.debruyne@ynov.com</a>
             </div>
           </div>
 
-          <div class="hero-right">
-            <div class="hero-content">
-              <h1 class="hero-title">Olan Debruyne</h1>
-              <p class="hero-subtitle">Étudiant en Bachelor Cybersécurité</p>
-              
-              <p class="hero-description">
-                Passionné par la sécurité informatique et l'administration système, je me spécialise dans la gestion d'environnements Windows/Linux, la virtualisation et l'administration de réseaux. Actuellement en B1 à Ynov Campus Lille.
-              </p>
-
-              <div class="hero-meta">
-                <div class="meta-item">
-                  <span class="meta-label">Localisation</span>
-                  <span class="meta-value">Lille, France</span>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-label">Âge</span>
-                  <span class="meta-value">19 ans</span>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-label">Permis</span>
-                  <span class="meta-value">Catégorie B</span>
-                </div>
-              </div>
-
-              <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary btn-large">
-                  <span>Prendre contact</span>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#projects" class="btn btn-secondary btn-large">
-                  <span>Voir mes projets</span>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section skills-section">
-      <div class="container-fluid">
-        <div class="section-header">
-          <h2 class="section-title">Compétences</h2>
-          <p class="section-subtitle">Domaines de spécialisation</p>
+    <!-- ── COMPÉTENCES ── -->
+    <section id="competences" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="prompt">&gt;_</span> COMPÉTENCES</h2>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab active" data-tab="systemes">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            SYSTÈMES
+          </button>
+          <button class="tab" data-tab="reseau">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-6 6M12 11l6 6"/></svg>
+            RÉSEAUX & SÉCU
+          </button>
+          <button class="tab" data-tab="outils">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            OUTILS & DEV
+          </button>
         </div>
 
-        <div class="skills-categories">
-          <div class="skill-category">
-            <h3 class="category-title">Systèmes</h3>
-            <div class="skills-list">
-              <span class="skill-chip">Windows Server</span>
-              <span class="skill-chip">Linux</span>
-              <span class="skill-chip">Administration</span>
-              <span class="skill-chip">Gestion Utilisateurs</span>
+        <!-- Tab: Systèmes -->
+        <div class="tab-content active" id="tab-systemes">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+              <div class="skill-name">WINDOWS SERVER</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
             </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="category-title">Virtualisation & Infra</h3>
-            <div class="skills-list">
-              <span class="skill-chip">VirtualBox</span>
-              <span class="skill-chip">VMware</span>
-              <span class="skill-chip">Hyper-V</span>
-              <span class="skill-chip">Configuration</span>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20M12 2a14.5 14.5 0 010 20M2 12h20"/></svg>
+              </div>
+              <div class="skill-name">LINUX (UBUNTU / DEBIAN)</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
             </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="category-title">Réseaux & Sécurité</h3>
-            <div class="skills-list">
-              <span class="skill-chip">TCP/IP</span>
-              <span class="skill-chip">Wireshark</span>
-              <span class="skill-chip">DHCP / DNS</span>
-              <span class="skill-chip">Pare-feu</span>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              </div>
+              <div class="skill-name">VIRTUALBOX / VMWARE</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
             </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="category-title">Outils & Autres</h3>
-            <div class="skills-list">
-              <span class="skill-chip">Git / GitHub</span>
-              <span class="skill-chip">Active Directory</span>
-              <span class="skill-chip">Permissions NTFS</span>
-              <span class="skill-chip">Troubleshooting</span>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div class="skill-name">HYPER-V</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div class="skill-name">ACTIVE DIRECTORY</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+              </div>
+              <div class="skill-name">GESTION UTILISATEURS</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
             </div>
           </div>
         </div>
+
+        <!-- Tab: Réseaux & Sécu -->
+        <div class="tab-content" id="tab-reseau">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="skill-name">TCP/IP &amp; PROTOCOLES</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="skill-name">WIRESHARK</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M6.3 6.3a8 8 0 000 11.4M17.7 6.3a8 8 0 010 11.4M3.5 3.5a12 12 0 000 17M20.5 3.5a12 12 0 010 17"/></svg>
+              </div>
+              <div class="skill-name">DHCP / DNS</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M17 12h.01M12 12h.01M7 12h.01"/></svg>
+              </div>
+              <div class="skill-name">PARE-FEU &amp; FILTRAGE</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+              </div>
+              <div class="skill-name">VLAN &amp; ROUTAGE</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="68"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              </div>
+              <div class="skill-name">PERMISSIONS NTFS</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="76"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Outils & Dev -->
+        <div class="tab-content" id="tab-outils">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              </div>
+              <div class="skill-name">POWERSHELL</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="76"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </div>
+              <div class="skill-name">GIT / GITHUB</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="68"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="skill-name">GO (GOLANG)</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="skill-name">HTML / CSS / JS</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="skill-name">TROUBLESHOOTING</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="84"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+              </div>
+              <div class="skill-name">VIRTUALISATION AVANCÉE</div>
+              <div class="skill-bar"><div class="skill-fill" data-w="77"></div></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section projects-section">
-      <div class="container-fluid">
-        <div class="section-header">
-          <h2 class="section-title">Projets</h2>
-          <p class="section-subtitle">Réalisations académiques et personnelles</p>
-        </div>
+    <!-- ── PROJETS ── -->
+    <section id="projets" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="prompt">&gt;_</span> PROJETS</h2>
 
         <div class="projects-grid">
-          <article class="project-item">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">GO LANG</span>
+              <span class="project-status status-online">● ACTIF</span>
             </div>
-            <h3 class="project-name">Puissance 4</h3>
-            <p class="project-info">Go | Jeu stratégique</p>
-            <p class="project-description">Implémentation d'un jeu Puissance 4 en Go avec interface console et IA basique.</p>
+            <h3 class="project-name">PUISSANCE 4</h3>
+            <p class="project-desc">Implémentation d'un jeu Puissance 4 en Go avec interface console et algorithme d'IA basique (minimax). Gestion complète des états de jeu et détection de victoire.</p>
             <div class="project-tags">
-              <span class="tag">Go</span>
-              <span class="tag">Algorithme</span>
+              <span class="ptag">Go</span>
+              <span class="ptag">Algorithme</span>
+              <span class="ptag">IA / Minimax</span>
             </div>
+            <a href="#" class="btn-project">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              VOIR LE PROJET
+            </a>
           </article>
 
-          <article class="project-item">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 7v5l4.25 2.52"/></svg>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">INFRASTRUCTURE</span>
+              <span class="project-status status-online">● ACTIF</span>
             </div>
-            <h3 class="project-name">Projet RED</h3>
-            <p class="project-info">Go | Infrastructure</p>
-            <p class="project-description">Projet d'infrastructure réseau simulée avec gestion d'équipements et configurations.</p>
+            <h3 class="project-name">PROJET RED</h3>
+            <p class="project-desc">Infrastructure réseau simulée avec gestion d'équipements virtuels, routage inter-VLAN et configurations avancées. Architecture complète en environnement isolé.</p>
             <div class="project-tags">
-              <span class="tag">Go</span>
-              <span class="tag">Réseau</span>
+              <span class="ptag">Go</span>
+              <span class="ptag">Réseau</span>
+              <span class="ptag">VLAN</span>
             </div>
+            <a href="#" class="btn-project">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              VOIR LE PROJET
+            </a>
           </article>
 
-          <article class="project-item">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">CYBERSÉCURITÉ</span>
+              <span class="project-status status-online">● ACTIF</span>
             </div>
-            <h3 class="project-name">Scripts d'Administration</h3>
-            <p class="project-info">PowerShell | Automatisation</p>
-            <p class="project-description">Développement de scripts PowerShell pour automatiser les tâches d'administration système.</p>
+            <h3 class="project-name">SCRIPTS D'ADMINISTRATION</h3>
+            <p class="project-desc">Collection de scripts PowerShell pour automatiser la gestion d'utilisateurs Active Directory, les droits NTFS et les tâches répétitives d'administration Windows.</p>
             <div class="project-tags">
-              <span class="tag">PowerShell</span>
-              <span class="tag">Admin</span>
+              <span class="ptag">PowerShell</span>
+              <span class="ptag">Windows</span>
+              <span class="ptag">Automation</span>
             </div>
+            <a href="#" class="btn-project">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              VOIR LE PROJET
+            </a>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section experience-section">
-      <div class="container-fluid">
-        <div class="section-header">
-          <h2 class="section-title">Parcours</h2>
-          <p class="section-subtitle">Formation et expérience</p>
-        </div>
+    <!-- ── PARCOURS ── -->
+    <section id="parcours" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="prompt">&gt;_</span> PARCOURS</h2>
 
         <div class="timeline">
-          <div class="timeline-item current">
-            <div class="timeline-marker">
-              <div class="timeline-dot"></div>
+
+          <div class="tl-item current">
+            <div class="tl-left">
+              <div class="tl-dot active"></div>
+              <div class="tl-line"></div>
             </div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Bachelor Cybersécurité</h3>
-              <p class="timeline-subtitle">Ynov Campus Lille | 2023 - 2026</p>
-              <p class="timeline-description">Formation complète en cybersécurité, administration système, gestion de réseaux et virtualisation.</p>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-badge tl-badge-blue">EN COURS</span>
+                <span class="tl-date">2023 → 2026</span>
+              </div>
+              <h3 class="tl-title">Bachelor Cybersécurité</h3>
+              <p class="tl-place">Ynov Campus Lille</p>
+              <p class="tl-desc">Formation complète en cybersécurité, administration système, réseaux, virtualisation et développement. Actuellement en B2.</p>
+              <div class="project-tags">
+                <span class="ptag">Cybersécurité</span>
+                <span class="ptag">Réseaux</span>
+                <span class="ptag">Administration</span>
+              </div>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-marker">
-              <div class="timeline-dot"></div>
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-dot"></div>
             </div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Baccalauréat</h3>
-              <p class="timeline-subtitle">2023</p>
-              <p class="timeline-description">Formation secondaire avec spécialisation en informatique, mathématiques et sciences physiques.</p>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-badge">DIPLÔMÉ</span>
+                <span class="tl-date">2023</span>
+              </div>
+              <h3 class="tl-title">Baccalauréat</h3>
+              <p class="tl-place">Mention obtenue</p>
+              <p class="tl-desc">Spécialisation en NSI (Numérique et Sciences Informatiques), mathématiques et sciences physiques.</p>
+              <div class="project-tags">
+                <span class="ptag">NSI</span>
+                <span class="ptag">Mathématiques</span>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section contact-section">
-      <div class="container-fluid">
-        <div class="section-header">
-          <h2 class="section-title">Contact</h2>
-          <p class="section-subtitle">Mettons-nous en relation</p>
-        </div>
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="prompt">&gt;_</span> CONTACT</h2>
 
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Informations de contact</h3>
-            
-            <div class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <div>
-                <p class="contact-label">Localisation</p>
-                <p class="contact-value">Lille, France</p>
+        <div class="contact-grid">
+
+          <div class="card contact-card">
+            <p class="contact-intro">Disponible pour un stage, une alternance ou tout autre opportunité en cybersécurité et administration système.</p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <span class="ci-label">EMAIL</span>
+                  <a href="mailto:olan.debruyne@ynov.com" class="ci-value">olan.debruyne@ynov.com</a>
+                </div>
               </div>
-            </div>
-
-            <div class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <div>
-                <p class="contact-label">Email</p>
-                <a href="mailto:leo@example.com" class="contact-value">olan.debruyne@ynov.com</a>
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <div>
+                  <span class="ci-label">LINKEDIN</span>
+                  <a href="https://www.linkedin.com/in/olan-debruyne/" target="_blank" class="ci-value">linkedin.com/in/olan-debruyne</a>
+                </div>
               </div>
-            </div>
-
-            <div class="contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <div>
-                <p class="contact-label">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/olan-debruyne/" class="contact-value">  https://www.linkedin.com/in/olan-debruyne/ </a>
+              <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <span class="ci-label">LOCALISATION</span>
+                  <span class="ci-value">Lille, France</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Nom</label>
-              <input type="text" id="name" name="name" required>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="fgroup">
+                <label>NOM</label>
+                <input type="text" name="name" placeholder="Votre nom" required>
+              </div>
+              <div class="fgroup">
+                <label>EMAIL</label>
+                <input type="email" name="email" placeholder="votre@email.com" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+            <div class="fgroup">
+              <label>MESSAGE</label>
+              <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
             </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-large">Envoyer le message</button>
+            <button type="submit" class="btn-submit">
+              ENVOYER
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            </button>
           </form>
+
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>© 2026 OLAN DEBRUYNE</span>
+      <span class="footer-sep">//</span>
+      <span>CYBERSÉCURITÉ &amp; SYSADMIN</span>
+    </footer>
 
   </main>
 
